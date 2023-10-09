@@ -5,11 +5,49 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card 1</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="globe"></ion-icon>
+      <p>Es una entidad polideportiva con sede en Madrid, España. 
+        Fue oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902</p>
+      <ion-button expand="full" color="primary">Botón 1</ion-button>
+      <img src="assets/logo_madrid.png" alt="madrid">
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card 2</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="globe"></ion-icon>
+      <p>El Fútbol Club Barcelona (en catalán: Futbol Club Barcelona), conocido popularmente como Barça,​ 
+        es una entidad polideportiva con sede en Barcelona, Cataluña, España. Fue fundado como club de fútbol el 29 de noviembre de 1899 
+        y registrado oficialmente el 5 de enero de 1903</p>
+      <ion-button expand="full" color="secondary">Botón 2</ion-button>
+      <img src="assets/logo_barça.png" alt="Barça">
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <img src="assets/logo_barça.png" alt="Barça">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="assets/logo_madrid.png" alt="madrid">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="assets/logo_liga.jpg" alt="liga">
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>

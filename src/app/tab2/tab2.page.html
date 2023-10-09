@@ -7,11 +7,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let jugador of JUGADORES">
+        <ion-avatar slot="start">
+          <img [src]="jugador.imagen" alt="{{ jugador.nombre }}">
+        </ion-avatar>
+        <ion-label>{{ jugador.nombre }}</ion-label>
+        <ion-label>{{ jugador.asistencias }}</ion-label>
+        <ion-checkbox [(ngModel)]="jugador.seleccionado"  color="success"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
 </ion-content>
