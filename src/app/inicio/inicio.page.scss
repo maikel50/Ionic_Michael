@@ -1,14 +1,14 @@
 .boton{
-    display: block;
-    padding: 0.5rem 1rem;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 300px;
+    position: absolute;
+    z-index: 1; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .boton2{
-    display: block;
-    padding: 0.5rem 1rem;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 10px;
+    position: absolute;
+    z-index: 1; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
