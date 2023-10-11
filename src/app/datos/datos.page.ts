@@ -10,8 +10,7 @@ export class DatosPage implements OnInit {
   constructor() { }
   ANIO ="2022/2023";
   CAMPEON ="FC.BARCELONA";
-  europa = "azul";
-  descendido ="rojo";
+  nombre : String ="";
    Equipo = [
     {
       imagen : 'assets/logo_barça.png',

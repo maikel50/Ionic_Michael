@@ -8,8 +8,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <p></p>
   <ion-label>AÑO: {{ ANIO }}</ion-label>
   <ion-label><p>CAMPEON: {{ CAMPEON }}</p></ion-label>
+  <ion-input [(ngModel)]="nombre" type="text" placeholder="Ingresa tu equipo favorito"></ion-input>
   <img src="assets/logo_liga.jpg" alt="Mi Imagen" class="img">
   
   <ion-list >
