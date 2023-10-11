@@ -9,5 +9,16 @@ import { Component } from '@angular/core';
 export class Tab3Page {
   
   constructor() {}
-
+  abrirURL() {
+    const url = 'https://www.realmadrid.com';
+    window.open(url, '_blank'); 
+  }
+  abrirURL2() {
+    const url = 'https://villarrealcf.es';
+    window.open(url, '_blank'); 
+  }
+  abrirURL3() {
+    const url = 'https://www.realsociedad.eus';
+    window.open(url, '_blank'); 
+  }
 }

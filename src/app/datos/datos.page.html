@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="header">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/inicio">VOLVER</ion-back-button>
+      <ion-back-button defaultHref="/inicio" class="miboton">VOLVER</ion-back-button>
     </ion-buttons>
     <ion-title>CLASIFICACIÓN</ion-title>
   </ion-toolbar>
@@ -11,8 +11,10 @@
   <ion-label>AÑO: {{ ANIO }}</ion-label>
   <ion-label><p>CAMPEON: {{ CAMPEON }}</p></ion-label>
   <img src="assets/logo_liga.jpg" alt="Mi Imagen" class="img">
+  
   <ion-list >
     <ion-item *ngFor="let e of Equipo" [class.list]="e.colorLinea === 'azul'" [class.list2]="e.colorLinea === 'rojo'">
+      
       <ion-avatar slot="start">
         <img [src]="e.imagen" alt="{{ e.nombre }}">
       </ion-avatar>
